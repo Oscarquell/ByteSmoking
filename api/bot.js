@@ -10,7 +10,7 @@ const chatId = '-4237525066';
 const bot = new TelegramBot(token);
 
 // Установите Webhook для бота
-const url = 'https://byte-smoking.vercel.app';  // замените на URL вашего приложения на Vercel
+const url = 'https://byte-smoking.vercel.app/';  // замените на URL вашего приложения на Vercel
 bot.setWebHook(url);
 
 // Функция для отправки сообщения
@@ -27,9 +27,9 @@ const scheduleMessages = () => {
     };
 
     // Настройте расписание согласно вашему времени и сообщениям
-    createJob('40 15 * * *', 'Asia/Bishkek', 'Доброе утро!');
-    createJob('41 12 * * *', 'Asia/Bishkek', 'Пора обедать!');
-    createJob('42 18 * * *', 'Asia/Bishkek', 'Добрый вечер!');
+    createJob('45 15 * * *', 'Asia/Bishkek', 'Доброе утро!');
+    createJob('46 15 * * *', 'Asia/Bishkek', 'Пора обедать!');
+    createJob('00 18 * * *', 'Asia/Bishkek', 'Добрый вечер!');
 };
 
 // Запустить планировщик
