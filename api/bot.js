@@ -10,7 +10,7 @@ const chatId = '-4237525066';
 const bot = new TelegramBot(token);
 
 // Установите Webhook для бота
-const url = 'https://your-vercel-app-url.vercel.app/api/bot';  // замените на URL вашего приложения на Vercel
+const url = 'https://byte-smoking.vercel.app';  // замените на URL вашего приложения на Vercel
 bot.setWebHook(url);
 
 // Функция для отправки сообщения
